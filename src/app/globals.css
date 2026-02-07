@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  /* This is how you define custom colors in Tailwind v4 */
+  --color-ivory-50: #FFFDF0;
+  --color-ivory-100: #FBF9E6;
+  --color-ivory-200: #F2F0D5;
+}
+
+:root {
+  --background: #FFFDF0; /* Ivory 50 */
+  --foreground: #0f172a; /* Deep Slate */
+}
+
+.dark {
+  --background: #0A0A0A; /* Deep Charcoal */
+  --foreground: #f8fafc;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  transition: background-color 0.5s ease;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui;
+}
+
+/* Force dark text on hover in light mode */
+html:not(.dark) .group:hover svg {
+  color: #020617 !important;
+  stroke: #020617 !important;
+  opacity: 1 !important;
+}
+
+/* Force white text on hover in dark mode */
+html.dark .group:hover svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+  opacity: 1 !important;
+}
