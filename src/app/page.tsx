@@ -24,8 +24,7 @@ export default function Home() {
       transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }
     }
   } satisfies Variants;
-
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  
 
   return (
     <main className="min-h-screen selection:bg-ivory-200 dark:selection:bg-slate-800">
@@ -129,11 +128,11 @@ export default function Home() {
                 transition={{ delay: 0.2, duration: 0.8 }}
                 className="text-slate-600 dark:text-slate-400"
               >
-                I specialize in the intersection of Digital Forensics and Clean Architecture. 
+                Fully commited to a life-long journey of learning. I'm a full stack developer with a passion for TypeScript, Kali and all things Cybersecurity.
                 <br /><br />
-                My approach is simple: <span className="italic text-slate-400">break early, patch fast, and keep it clean.</span> Drawing from experience in Data Analytics, I understand the critical weight of data security in the real world. 
+                I love spending my time coding and facing challenges. I'm highly adaptable to new challenges and enjoy working with others.
                 <br /><br />
-                I’m a firm believer that complexity is often the enemy of safety—security should be robust, but it doesn't need to be difficult.
+                While I'm not at my computer, I spend my time reading or going to the gym to keep fit.
               </motion.p>
             </div>
 
@@ -143,7 +142,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              <span className="font-mono text-[10px] uppercase tracking-widest opacity-60 font-bold mb-8 block text-slate-900 dark:text-white">
+              <span className="font-mono text-[10px] uppercase tracking-widest font-bold mb-8 block text-slate-600 dark:text-slate-400">
                 Technical Proficiency
               </span>
               <div className="flex flex-wrap gap-4 md:gap-6">
